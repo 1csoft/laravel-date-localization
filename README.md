@@ -84,12 +84,13 @@ Soft1c\Date\Date::today()->format('j F Yг.'); // -> 6 мартa 2020г.
 ## Пример использования
 ```php
 use Soft1c\Date\Date;
-Date::setLocale('nl');
+Date::setLocale('ru');
 echo Date::now()->format('j F Yг.'); // -> 6 мартa 2020г.
 echo Date::parse('-1 day')->diffForHumans(); // -> 1 день назад
 echo Date::parse('-6 day')->diffForHumans(); // -> 6 дней назад
 echo Date::parse('-16 day')->diffForHumans(); // -> 2 недели назад
 echo Date::parse('-2 hour')->diffForHumans(); // -> 2 часа назад
+echo Date::parse('+3 hour')->diffForHumans(); // -> через 2 часа
 ```
 
 Carbon-это библиотека, на которой основан класс Date. 
