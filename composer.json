@@ -1,0 +1,36 @@
+{
+    "name": "soft1c/laravel-date-localization",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0",
+        "nesbot/carbon": "^1.0|^2.0"
+    },
+    "authors": [
+        {
+            "name": "dres",
+            "email": "dres@1c.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Soft1c\\Date\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Soft1c\\Date\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Soft1c\\Date\\DateServiceProvider"
+            ],
+            "aliases": {
+                "Date": "Soft1c\\Date\\Date"
+            }
+        }
+    }
+}
