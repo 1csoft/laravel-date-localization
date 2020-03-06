@@ -1,14 +1,16 @@
 {
     "name": "soft1c/laravel-date-localization",
     "license": "MIT",
+    "keywords": ["laravel", "date", "time", "datetime", "i18n", "translation", "carbon"],
+    "homepage": "https://github.com/1csoft/laravel-date-localization",
     "require": {
         "php": "^7.2.5",
-        "laravel/framework": "^7.0",
+        "laravel/framework": "^6.0|^7.0",
         "nesbot/carbon": "^1.0|^2.0"
     },
     "authors": [
         {
-            "name": "dres",
+            "name": "Stanislav Dremin",
             "email": "dres@1c.ru"
         }
     ],
@@ -29,7 +31,7 @@
                 "Soft1c\\Date\\DateServiceProvider"
             ],
             "aliases": {
-                "Date": "Soft1c\\Date\\Date"
+                "SoftDate": "Soft1c\\Date\\Date"
             }
         }
     }
