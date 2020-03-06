@@ -1,21 +1,27 @@
-#Локализация дат в Laravel
+# Локализация дат в Laravel
 Локализацию можно устроить 2 способами.
 1) setlocale(LC_TIME, 'ru_RU.UTF-8') и тогда carbon должен понимать все на русском. Но это если на серваке установлены соответствующие локали в ОС.
 2) Когда нет возможности или желания возиться с установнокй локалей, то можно ставить этот пакет.
 
-``composer require soft1c/laravel-date-localization``
+```shell script
+composer require soft1c/laravel-date-localization
+```
 
 После установки можно юзать как
 
-```Soft1c\Date\Date::today()->format('j F Yг.'); // -> 6 мартa 2020г.```
+```php
+Soft1c\Date\Date::today()->format('j F Yг.'); // -> 6 мартa 2020г.
+```
 
 Класс наследуется от Illuminate\Support\Carbon и потому в нем доступны все методы стандартного Carbon.
 
 Можно вписать еще и фасадом в config/app.php
 
-```'Date' => Soft1c\Date\Date::class,```
+```php
+'Date' => Soft1c\Date\Date::class,
+```
 
-##Поддерживаемые языки
+## Поддерживаемые языки
 * Albanian
 * Arabic
 * Azerbaijani
@@ -75,7 +81,7 @@
 * Vietnamese
 * Welsh
 
-##Пример использования
+## Пример использования
 ```php
 use Soft1c\Date\Date;
 Date::setLocale('nl');
